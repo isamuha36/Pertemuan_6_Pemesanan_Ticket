@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pertemuan_6_Pemesanan_Ticket</string>
+    <string name="pemesanan_tiket_kereta">Pemesanan Tiket Kereta</string>
+    <array name="tujuan">
+        <item>Tujuan</item>
+        <item>Jakarta</item>
+        <item>Semarang</item>
+        <item>Jogja</item>
+        <item>Surabaya</item>
+        <item>Bandung</item>
+    </array>
+
+</resources>

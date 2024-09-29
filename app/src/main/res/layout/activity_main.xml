@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemesanan Tiket Kereta"
+        android:textSize="24sp"
+        android:textColor="#1E293B"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/namaPemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pemesan"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="8dp"
+        android:translationZ="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/jamKeberangkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jam Keberangkatan"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/baseline_access_time_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="8dp"
+        android:translationZ="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tanggalKeberangkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Keberangkatan"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/baseline_calendar_month_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="8dp"
+        android:translationZ="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="40dp"
+            android:elevation="8dp"
+            android:translationZ="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Ikon tujuan -->
+            <ImageView
+                android:id="@+id/icon_tujuan"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_location_on_24"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Spinner tujuan -->
+            <Spinner
+                android:id="@+id/spinner_tujuan"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnPesanTiket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan Tiket"
+        android:background="@drawable/rounded_button"
+        app:backgroundTint="#525BFF"
+        android:elevation="8dp"
+        android:translationZ="8dp"
+        android:stateListAnimator="@null"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="12dp"/>
+
+
+
+
+</LinearLayout>
